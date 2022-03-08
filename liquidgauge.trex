@@ -4,7 +4,7 @@
         <default-locale>en_US</default-locale>
         <name resource-id="name"/>
         <description>Liquid Fill Gauge</description>
-        <author name="sanveera" email="sankar.veeraiyan@gmail.com" organization="Sanveera" website="https://github.com/sanveera"/>
+        <author name="Sankar Veeraiyan" email="sankar.veeraiyan@gmail.com" organization="Sanveera" website="https://github.com/sanveera"/>
         <min-api-version>1.0</min-api-version>
         <source-location>
             <url>https://sanveera.github.io/tab-ext-liquidfillgauge/lg.html</url> 
