@@ -48,7 +48,6 @@
         }
         function configure() {
             const popupUrl = `${window.location.origin}/tab-ext-liquidfillgauge/config.html`;
-            alert(popupurl)
             tableau.extensions.ui
                 .displayDialogAsync(popupUrl, JSON.stringify(lgSettings), { height: 550, width: 700 })
                 .then((closePayload) => {
