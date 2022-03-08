@@ -1,7 +1,3 @@
-## Welcome to GitHub Pages
+## Tableau Extension - Liquid Fill Gauge
 
-You can use the [editor on GitHub](https://github.com/sanveera/tab-ext-liquidfillgauge/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+![Preview](https://github.com/sanveera/tab-ext-liquidfillgauge/blob/main/assets/screenshot.gif)
