@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- Extensions Library (this will be hosted on a CDN eventually) -->
+    <script src="js/tableau.extensions.1.latest.js"></script>
+    <script src="js/config.js"></script>
+    <title>Liquid Fill Gauge Settings</title>
+    <style>
+        .cfCont {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid" id="cfCont">
+        <h4>Liquid Fill Gauge Settings</h4>
+        <h5>Data Settings</h5>
+        <div class="row">
+            <div class="col-sm-3">Worksheets</div>
+            <div class="col-sm-8"><select id="sWorksheets"></select></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">Field</div>
+            <div class="col-sm-8"><select id="sFields"></select></div>
+        </div>
+        <h5>Layout Settings</h5>
+        <div class="row">
+            <div class="col-sm-3">Min Value</div>
+            <div class="col-sm-3"><input id="minValue" type="text" placeholder="Min Value" width="100"></div>
+            <div class="col-sm-3">Max Value</div>
+            <div class="col-sm-3"><input id="maxValue" type="text" placeholder="Max Value" width="100"></div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">Circle Thickness</div>
+            <div class="col-sm-3"><input id="circleThickness" type="text" placeholder="Circle Thickness" width="100"></div>
+            <div class="col-sm-3">Circle Fill Gap</div>
+            <div class="col-sm-3"><input id="circleFillGap" type="text" placeholder="Circle Fill Gap" width="100"></div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">Wave Height</div>
+            <div class="col-sm-3"><input id="waveHeight" type="text" placeholder="Wave Height" width="100"></div>
+            <div class="col-sm-3">Wave Count</div>
+            <div class="col-sm-3"><input id="waveCount" type="text" placeholder="Wave Count" width="100"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">Wave RiseTime</div>
+            <div class="col-sm-3"><input id="waveRiseTime" type="text" placeholder="Wave RiseTime" width="100"></div>
+            <div class="col-sm-3">Wave AnimateTime</div>
+            <div class="col-sm-3"><input id="waveAnimateTime" type="text" placeholder="Wave AnimateTime" width="100"></div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-3">Wave Offset</div>
+            <div class="col-sm-3"><input id="waveOffset" type="text" placeholder="Wave Offset" width="100"></div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">Text Vertical Position</div>
+            <div class="col-sm-3"><input id="textVertPosition" type="text" placeholder="Text Vertical Position" width="100"></div>
+            <div class="col-sm-3">Text Size</div>
+            <div class="col-sm-3"><input id="textSize" type="text" placeholder="Text Size" width="100"></div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-1">Wave Rise</div>
+            <div class="col-sm-1"><input id="waveRise" type="checkbox" placeholder="Wave Rise" width="100"></div>
+            <div class="col-sm-2">Wave HeightScaling</div>
+            <div class="col-sm-1"><input id="waveHeightScaling" type="checkbox" placeholder="Wave HeightScaling" width="100"></div>
+            <div class="col-sm-1">Wave Animate</div>
+            <div class="col-sm-1"><input id="waveAnimate" type="checkbox" placeholder="Wave Animate" width="100"></div>
+            <div class="col-sm-2">Value Count Up</div>
+            <div class="col-sm-1"><input id="valueCountUp" type="checkbox" placeholder="Value Count Up" width="100"></div>
+            <div class="col-sm-1">Display Percent</div>
+            <div class="col-sm-1"><input id="displayPercent" type="checkbox" placeholder="Display Percent" width="100"></div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-1">Wave Color</div>
+            <div class="col-sm-1"><input id="waveColor" type="color" placeholder="Wave Color" width="100"></div>
+            <div class="col-sm-2">Circle Color</div>
+            <div class="col-sm-1"><input id="circleColor" type="color" placeholder="Circle Color" width="100"></div>
+            <div class="col-sm-2">Text Color</div>
+            <div class="col-sm-1"><input id="textColor" type="color" placeholder="Text Color" width="100"></div>
+            <div class="col-sm-2">Wave Text Color</div>
+            <div class="col-sm-1"><input id="waveTextColor" type="color" placeholder="Wave Text Color" width="100"></div>
+        </div>
+        <br>
+        <button id="closeButton" class="btn btn-primary">Save Settings</button>
+    </div>
+
+</body>
+
+</html>
